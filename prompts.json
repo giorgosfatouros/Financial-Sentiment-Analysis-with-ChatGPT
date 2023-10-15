@@ -1,0 +1,215 @@
+{
+    "GPT-P1": {
+        "messages": [
+            {
+                "role": "system",
+                "content": "Act as a financial expert holding {ticker}"
+            },
+            {
+                "role": "assistant",
+                "content": "How do you feel about the headline '{headline}'?"
+            },
+            {
+                "role": "user",
+                "content": "Answer in one token: positive, negative, or neutral"
+            }
+        ],
+        "max_tokens": 1,
+        "top_p": 1
+    },
+    "GPT-P2": {
+      "messages": [
+          {
+              "role": "system",
+              "content": "Act as an expert at forex trading"
+          },
+          {
+              "role": "assistant",
+              "content": "Classify the sentiment for {ticker} based only on the headline '{headline}'"
+          },
+          {
+              "role": "user",
+              "content": "Answer in one token: positive, negative, or neutral"
+          }
+      ],
+      "max_tokens": 1,
+      "top_p": 1
+  },
+    "GPT-P3": {
+      "messages": [
+          {
+              "role": "system",
+              "content": "Act as a sentiment analysis model trained on financial news headlines"
+          },
+          {
+              "role": "assistant",
+              "content": "Classify the sentiment of the headline '{headline}'"
+          },
+          {
+              "role": "user",
+              "content": "Answer in one token: positive, negative, or neutral"
+          }
+      ],
+      "max_tokens": 1,
+      "top_p": 1
+  },
+    "GPT-P4": {
+      "messages": [
+          {
+              "role": "system",
+              "content": "Act as an expert at forex trading holding {ticker}"
+          },
+          {
+              "role": "assistant",
+              "content": "Based only on the headline '{headline}', will you buy, sell or hold {ticker} in the short term?"
+          },
+          {
+              "role": "user",
+              "content": "Answer in one token: positive for buy, negative for sell, or neutral for hold position"
+          }
+      ],
+      "max_tokens": 1,
+      "top_p": 1
+  },
+    "GPT-P4A": {
+      "messages": [
+          {
+              "role": "system",
+              "content": "Act as an expert at forex trading holding {ticker}"
+          },
+          {
+              "role": "user",
+              "content": "Based only on the following article, will you buy, sell or hold {ticker} in the short term? \nArticle:\n'{article}'\n\nAnswer in one token (positive for buy, negative for sell, or neutral for hold position):"
+          }
+      ],
+      "max_tokens": 16,
+      "top_p": 1
+  },
+
+    "GPT-P1N": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as a financial expert holding {ticker}"
+              },
+          {
+            "role": "user",
+            "content": "How do you feel with the headline '{headline}'? Provide only a sentiment score ranging from -1 to 1 in a list eg [1]. 1 indicates a fully positive/bullish sentiment or buy position"
+          }
+      ],
+      "max_tokens": 20,
+      "top_p": 1
+  },
+  "GPT-P2N": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as a financial expert"
+              },
+          {
+            "role": "user",
+            "content": "Classify the sentiment for {ticker} based only on the headline '{headline}'. Classify the sentiment for {ticker} based only on the headline '{headline}'. Provide only a number ranging from -1 to 1 in a list eg [1]. 1 indicates a fully positive/bullish sentiment or buy position."
+          }
+      ],
+      "max_tokens": 20,
+      "top_p": 1
+  },
+  "GPT-P3N": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as a sentiment analysis model trained on financial news headlines"
+              },
+          {
+            "role": "user",
+            "content": "Classify the sentiment of the headline {headline}. Provide only a number ranging from -1 to 1 in a list eg [1]. 1 indicates a fully positive/bullish sentiment or buy position."
+          }
+      ],
+      "max_tokens": 10,
+      "top_p": 1
+  },
+  "GPT-P4N": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as an expert at forex trading holding {ticker}"
+              },
+          {
+            "role": "user",
+            "content": "Based only on the headline {headline}, will you buy, sell or hold {ticker} in the short term? Provide only a number ranging from -1 to 1 in a list eg [0]. 1 indicates a fully positive/bullish sentiment or buy position."
+          }
+      ],
+      "max_tokens": 10,
+      "top_p": 1
+  },
+    "GPT-P4NA": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as an expert at forex trading holding {ticker}"
+              },
+          {
+            "role": "user",
+            "content": "Analyze the provided article and provide a well-informed recommendation for the short-term action to be taken with regards to {ticker}.\n\nArticle: {article}\n\nConsidering only the information presented in the article, would you advise buying, selling, or holding {ticker} in the near future?\n\nYour response should be a list containing a single ranging from -1 to 1, with 1 indicating a fully positive/bullish sentiment or a strong recommendation to buy. Example response for neutral sentiment: '[0]'\n\nYour response:"
+          }
+      ],
+      "max_tokens": 16,
+      "top_p": 1
+  },
+  "GPT-P5": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as an expert at forex trading holding {ticker}"
+              },
+          {
+            "role": "user",
+            "content": "Based only on the following list of headlines '{headline}', will you buy, sell or hold {ticker} in the short term? Answer in one token: positive for buy, negative for sell, or neutral for hold position"
+          }
+      ],
+      "max_tokens": 1,
+      "top_p": 1
+  },
+   "GPT-P5N": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as an expert at forex trading holding {ticker}"
+              },
+          {
+            "role": "user",
+            "content": "Based only on the following list of headlines '{headline}', provide the short-term market sentiment score for {ticker}. Provide only a sentiment score ranging from -1 to 1 in a list eg [1]. 1 indicates a fully positive/bullish sentiment"
+          }
+      ],
+      "max_tokens": 20,
+      "top_p": 1
+  },
+  "GPT-P6N": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as a sentiment analysis service of a financial platform."
+              },
+          {
+            "role": "user",
+            "content": "Based only on the following list of headlines [{headline}], provide a summary of the daily sentiment for the forex pairs in {ticker}. Provide only the sentiment score per FX pair in JSON format eg {{'USDJPY': -0.4, 'EURUSD': 0.6}}. The sentiment score ranges from -1 to 1.1 indicates a fully bullish sentiment or buy position."
+          }
+      ],
+      "max_tokens": 200,
+      "top_p": 1
+  },
+   "GPT-P6": {
+      "messages": [
+          {
+            "role": "system",
+            "content": "Act as a sentiment analysis service of a financial platform."
+              },
+          {
+            "role": "user",
+            "content": "Based only on the following list of headlines [{headline}], provide a summary of the daily sentiment for the forex pairs in {ticker}. Provide only the sentiment per forex pair in JSON format eg {{'USDJPY': 'positive', 'EURUSD': 'neutral'}}. The sentiment can be positive for buy, negative for sell, or neutral for hold position."
+          }
+      ],
+      "max_tokens": 200,
+      "top_p": 1
+  }
+}

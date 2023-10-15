@@ -1,0 +1,6 @@
+openai==0.28.1
+pandas~=1.4.4
+numpy==1.21.2
+matplotlib==3.5.2
+seaborn==0.12.2
+scikit-learn~=1.1.3
