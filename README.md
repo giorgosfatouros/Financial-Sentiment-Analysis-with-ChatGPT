@@ -8,7 +8,6 @@ This repository contains the code and supplementary materials for our research p
 ## Prerequisites
 
 - Python 3.x
-- Required Python libraries: `openai`, `pandas`, `json`
 
 ## Setup
 
