@@ -4,7 +4,7 @@ This repository contains the code and supplementary materials for our research p
 - Paper Title:Transforming Sentiment Analysis in the Financial Domain with ChatGPT
 - Authors: Georgios Fatouros, John Soldatos, Kalliopi Kouroumali, Georgios Makridis and Dimosthenis Kyriazis
 - Submitted to: Elsevier Machine Learning with Applications
-- **Cite as:** Fatouros, G., Soldatos, J., Kouroumali, K., Makridis, G., & Kyriazis, D. (2023). Transforming Sentiment Analysis in the Financial Domain with ChatGPT. arXiv preprint arXiv:2308.07935.
+- **Cite as:**  G. Fatouros, J. Soldatos, K. Kouroumali et al., Transforming sentiment analysis in the financial domain with ChatGPT. Machine Learning with Applications (2023), doi: https://doi.org/10.1016/j.mlwa.2023.100508.
 ## Prerequisites
 
 - Python 3.x
